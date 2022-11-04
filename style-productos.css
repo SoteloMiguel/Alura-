@@ -1,0 +1,115 @@
+:root{
+  --ColorHover:#000;
+}
+body{
+  background-color: #e5e6e3;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-color: #c1c2be;
+}
+div.headerBox{
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+nav{
+  position: absolute;
+  top: 125px;
+  right: 0;  
+}
+ul{
+  list-style-type: none;
+  font-weight: 300;
+  list-style: none;
+  font-size: 25px;
+}
+ul li.activo{
+  text-decoration: underline solid #000 3px;
+  font-weight: 500;
+}
+nav ul li{
+  margin: 0 0 0 30px;
+  display: inline;
+}
+nav ul li:hover a{
+  font-weight: 500;
+  color: var(--ColorHover);
+  /*text-decoration: underline;*/
+  text-shadow: 0 4px 0 #fff;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+a:visited{
+  color: #000;
+}
+div.tarjetas, 
+ul.tarjetas{
+  width: 940px;
+  margin: 30px auto;
+}
+ul.tarjetas{
+  list-style: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+div.tarjeta, 
+li.tarjeta{
+  width: 30%;
+  background-color: #eff0ef;
+  border: 5px solid #c1c2be;
+  border-bottom: 5px solid #fff;
+  border-right: 5px solid #fff;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin: 0px 1.5%;
+  padding:30px 20px;
+  box-sizing: border-box;
+}
+div.tarjeta:hover, 
+li.tarjeta:hover{
+  width: 30%;
+  box-shadow: 6px 6px 6px #567b8a,
+              3px 3px 3px #4d6a75;
+  background-color: #d5effa;
+  border: 5px solid #c1c2be;
+  border-top: 5px solid #fff;
+  border-left: 5px solid #fff;
+  border-radius: 0 30%;
+}
+div.tarjeta h2, 
+li.tarjeta h2{
+  font-size: 28px;
+  margin-top: 15px;
+}
+div.tarjeta p.producto-descripcion,
+li.tarjeta p.producto-descripcion{
+  margin-bottom: 10px;
+  line-height: 1.5; 
+}
+div.tarjeta p.precio,
+li.tarjeta p.precio{
+  font-size: 18px;
+  font-weight: 900;
+}
+img{
+  width: 250px;
+}
+
+footer{
+  /*background-color: rgb(46, 39, 39);*/
+  background-image: url(./imagenes/bg.jpg);
+  text-align: center;
+  padding: 20px;
+}
+footer p.copyright{
+  font-size: 12px;
+  color: #fff;
+}

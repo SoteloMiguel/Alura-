@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbería Alura</title>
+  <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+  <link rel="stylesheet" href="./style-reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style-contacto.css">
+  <title>Barberia Alura</title>
+</head>
+
+<body>
+  <header>
+    <div class="headerBox">
+      <h1>
+        <img src="./imagenes/logo.png" alt="Logotipo de la empresa Alura">
+      </h1>
+      <nav class="topNav">
+
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li class="activo">Contacto</li>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+  <main>
+    <form action="" method="post">
+
+      <label for="NyA">Nombre y Apellido:</label>
+      <input class="input-padron" type="text" class="form-control" name="" id="NyA" aria-describedby="helpId"
+        placeholder="Nombre y Apellido" required>
+
+      <label for="email">Correo electronico:</label>
+      <input class="input-padron" type="email" class="form-control" name="" id="email" aria-describedby="helpId"
+        placeholder="Email@dominio.com" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input class="input-padron" type="tel" class="form-control" name="" id="telefono" aria-describedby="helpId"
+        placeholder="(xxxx) xxx xxx" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea name="" id="mensaje" cols="50" rows="10" placeholder="consulta" required></textarea>
+
+      <fieldset>
+        <legend>¿ Como te gustaría que te contatemos ?</legend>
+        <label for="radio-mail"><input type="radio" class="radio" name="radio" id="radio-mail"
+            value="email">Email</label>
+
+        <label for="radio-telefono"><input type="radio" class="radio" name="radio" id="radio-telefono"
+            value="telefono">Teléfono</label>
+
+        <label for="radio-Whatsapp"><input type="radio" class="radio" name="radio" id="radio-Whatsapp" value="email"
+            checked>Whatsapp</label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>¿ En cual horario quiere ser atendido ?</legend>
+
+        <select name="" id="">
+          <option value="">Mañana</option>
+          <option value="">Tarde</option>
+          <option value="">Noche</option>
+          <option value="">Indistinto</option>
+        </select>
+
+      </fieldset>
+
+      <label class="checkbox" for="">
+        <input type="checkbox" name="" id="checkbox" checked>
+        ¿Le gustaría recibir novedades de la barberia Alura?
+      </label>
+
+      <input class="submit" id="enviar" type="submit" value="Enviar Formulario">
+
+    </form>
+
+    <table>
+      <caption>Horarios</caption>
+      <thead>
+        <tr>
+          <th>Día</th>
+          <th>Horario</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Lunes</td>
+          <td>08h - 20h</td>
+        </tr>
+        <tr>
+          <td>Miérsoles</td>
+          <td>08h - 20h</td>
+        </tr>
+        <tr>
+          <td>Viernes</td>
+          <td>08h - 20h</td>
+        </tr>
+        <tr></tr>
+      </tbody>
+
+    </table>
+
+  </main>
+
+
+
+  <footer>
+    <img src="./imagenes/logo-blanco.png" alt="Logotipo de la empresa Alura">
+    <p class="copyright">&copy Copyright Barberia Alura 2022.</p>
+  </footer>
+</body>
+
+</html>

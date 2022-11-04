@@ -1,0 +1,153 @@
+:root{
+  --ColorHover:#000;
+  --boxShadow: inset 4px 4px 3px #bebebc,
+                4px 4px 3px #fff;
+}
+body{
+  background-color: #e5e6e3;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*Header*/
+header{
+  background-color: #c1c2be;
+}
+div.headerBox{
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+nav{
+  position: absolute;
+  top: 125px;
+  right: 0;  
+}
+ul{
+  list-style-type: none;
+  font-weight: 300;
+  list-style: none;
+  font-size: 25px;
+}
+ul li.activo{
+  text-decoration: underline solid #000 3px;
+  font-weight: 500;
+}
+nav ul li{
+  margin: 0 0 0 30px;
+  display: inline;
+}
+nav ul li:hover a{
+  font-weight: 500;
+  color: var(--ColorHover);
+  /*text-decoration: underline;*/
+  text-shadow: 0 4px 0 #fff;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+a:visited{
+  color: #000;
+}
+/*Footer*/
+footer{
+  background-image: url(./imagenes/bg.jpg);
+  text-align: center;
+  padding: 20px;
+}
+footer p.copyright{
+  font-size: 12px;
+  color: #fff;
+}
+
+/* Formulario */
+main{
+  width: 940px;
+  margin: 0 auto;
+}
+form{
+  margin: 40px 0;
+}
+form label, form fieldset legend{
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+form input.input-padron{
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+  font-size: 18px;
+  border: none;
+  box-shadow: var(--boxShadow);
+}
+form textarea#mensaje{
+  font-size: 18px;
+  margin: 0 0 20px;
+  padding: 10px;
+  box-shadow: var(--boxShadow);
+  border: none;
+  outline:none;
+  resize: none;
+}
+select{
+  font-size: 18px;
+  padding: 5px;
+  border: none;
+  outline:none;
+  box-shadow: var(--boxShadow);
+  width: 15%;
+}
+select option{
+  text-align: center;
+}
+label.checkbox{
+  margin: 20px 0;
+}
+
+.submit{
+  border: none;
+  outline: none;
+  box-shadow:  inset 4px 4px 3px #fff,
+                4px 4px 3px #bebebc;
+  border-radius: 5px;
+  background-color: #d5effa;
+  width: 40%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  
+}
+.submit:hover{
+  cursor: pointer;
+  background-color: #53c2f1;
+  transition: 1.5s background-color;
+}
+table caption{
+  padding-bottom: 10px;
+  font-size: 18px;
+  /*caption-side: bottom;*/
+}
+table, th, tr, td{
+  /*border: 1px solid #000;*/
+  padding: 15px;  
+}
+table{
+  width: 50%;
+  margin-bottom: 50px;
+}
+thead tr{
+  font-weight: 600;
+  background: #575752;
+  color: #fff;
+}
+tr{
+  text-align: center;
+  background-color: #fff;
+}
+tr:nth-child(even){
+  background-color: #e1f5f7;
+}
